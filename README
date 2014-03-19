@@ -1,7 +1,7 @@
-########################################################################
+####################################################################################################################
 Project 3: UDPTraceroute
 Team Members: Jason Beck & Will Henry
-########################################################################
+####################################################################################################################
 To compile the code, type:
 
 	ant
@@ -14,7 +14,7 @@ Note: PORT_NUMBER is the destination port number, MAX_HOPS is the max number of 
 	  dropped, and IP_ADDRESS is the destination ip address
 Note well: sending host name is myip.local and it must be set outside the program to the sender's local ip
 
-########################################################################
+####################################################################################################################
 Here is an example of a successful traceroute:
 
 UDP traceroute from 172.17.152.99 to 208.67.158.146 with max hops of 30
