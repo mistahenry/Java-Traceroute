@@ -1,0 +1,53 @@
+###############################################################################################################
+Project 3: UDPTraceroute
+Team Members: Jason Beck & Will Henry
+###############################################################################################################
+To compile the code, type:
+
+	ant
+
+To run the code, you must be in the build directory and type:
+
+	java -Djava.library.path=../lib/ -cp ./:../lib/* UDPTraceroute -p <PORT_NUMBER> -h <MAX_HOPS> <IP_ADDRESS>
+
+Note: PORT_NUMBER is the destination port number, MAX_HOPS is the max number of hops until the packet is
+	  dropped, and IP_ADDRESS is the destination ip address
+Note well: sending host name is myip.local and it must be set outside the program to the sender's local ip
+
+###############################################################################################################
+Here is an example of a successful traceroute:
+
+UDP traceroute from 172.17.152.99 to 208.67.158.146 with max hops of 30
+
+TTL: 1  | HopIP: 172.17.152.1   | Time: 1.192993ms
+
+TTL: 2  | HopIP: 128.192.0.5    | Time: 1.435941ms
+
+TTL: 3  | HopIP: 128.192.254.49 | Time: 0.611057ms
+
+TTL: 4  | HopIP: X.X.X.X        | Time: Timeout
+
+TTL: 5  | HopIP: X.X.X.X        | Time: Timeout
+
+TTL: 6  | HopIP: X.X.X.X        | Time: Timeout
+
+TTL: 7  | HopIP: X.X.X.X        | Time: Timeout
+
+TTL: 8  | HopIP: 154.54.83.201  | Time: 32.916ms
+
+TTL: 9  | HopIP: X.X.X.X        | Time: Timeout
+
+TTL: 10 | HopIP: X.X.X.X        | Time: Timeout
+
+TTL: 11 | HopIP: 66.250.13.6    | Time: 72.91959ms
+
+TTL: 12 | HopIP: 38.104.86.58   | Time: 36.627502ms
+
+TTL: 13 | HopIP: 208.67.156.45  | Time: 36.531406ms
+
+TTL: 14 | HopIP: 208.67.156.90  | Time: 37.95323ms
+
+TTL: 15 | HopIP: 208.67.158.146 | Time: 38.056736ms
+
+Destination found!
+
